@@ -1,0 +1,49 @@
+➜  lab3 git:(main) vim toy_shell.py
+➜  lab3 git:(main) ✗ python toy_shell.py 
+Toy Shell: List files and folders older than a given date (based on creation time)
+Enter a date in the format YYYY-MM-DD or type 'exit' to quit.
+toy-shell> ^C
+Use 'exit' to quit the shell.
+toy-shell> ^Z
+[2]  + 21821 suspended  python toy_shell.py
+➜  lab3 git:(main) ✗ sudo mv toy_shell.py /usr/local/bin/toy_shell
+Password: 
+➜  lab3 git:(main) ls /usr/local/bin/toy_shell
+/usr/local/bin/toy_shell
+➜  lab3 git:(main) toy_shell
+zsh: permission denied: toy_shell
+➜  lab3 git:(main) sudo chmod +x /usr/local/bin/toy_shell 
+➜  lab3 git:(main) ls
+➜  lab3 git:(main) ls
+➜  lab3 git:(main) toy_shell
+Toy Shell: List files and folders older than a given date (based on creation time)
+Enter a date in the format YYYY-MM-DD or type 'exit' to quit.
+toy-shell> ^C      
+Use 'exit' to quit the shell.
+toy-shell> ^Z
+[3]  + 21983 suspended  toy_shell
+➜  lab3 git:(main) touch smth
+➜  lab3 git:(main) ✗ touch smth2
+➜  lab3 git:(main) ✗ toy_shell  
+Toy Shell: List files and folders older than a given date (based on creation time)
+Enter a date in the format YYYY-MM-DD or type 'exit' to quit.
+toy-shell> 1981-09-06
+toy-shell> 19810906    
+Invalid date format. Please use YYYY-MM-DD.
+toy-shell> ^[[F^[[A^[[D^C
+Use 'exit' to quit the shell.
+toy-shell> ^C
+Use 'exit' to quit the shell.
+toy-shell> 2026-01-13
+toy-shell> 2026-01-30
+smth (File, Created: 2026-01-13 10:24:57)
+smth2 (File, Created: 2026-01-13 10:25:00)
+toy-shell> ^C
+Use 'exit' to quit the shell.
+toy-shell> ^Z
+[4]  + 22039 suspended  toy_shell
+➜  lab3 git:(main) ✗ ls /usr/local/bin/toy_shell
+/usr/local/bin/toy_shell
+➜  lab3 git:(main) ✗ sudo rm /usr/local/bin/toy_shell
+➜  lab3 git:(main) ✗ ls
+smth  smth2
