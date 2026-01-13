@@ -1,0 +1,253 @@
+➜  lab2 git:(main) ✗ sudo nano /usr/local/bin/system_info
+Password: 
+➜  lab2 git:(main) ✗ sudo chmod +x /usr/local/bin/system_info 
+➜  lab2 git:(main) ✗ system_info
+Hostname: xog
+Current User: xexertye
+Disk Space: Filesystem      Size  Used Avail Use% Mounted on
+devtmpfs         10M     0   10M   0% /dev
+tmpfs           3.6G  484K  3.6G   1% /dev/shm
+tmpfs           3.6G  1.3M  3.6G   1% /run
+/dev/nvme0n1p3  222G   31G  191G  14% /
+efivarfs        128K   40K   84K  32% /sys/firmware/efi/efivars
+/dev/nvme0n1p1 1022M  156K 1022M   1% /efi
+tmpfs           731M  8.0M  723M   2% /run/user/1000
+➜  lab2 git:(main) ✗ date
+Tue Jan 13 07:23:13 AM +06 2026
+➜  lab2 git:(main) ✗ echo hello
+hello
+➜  lab2 git:(main) ✗ ls
+➜  lab2 git:(main) ✗ touch 123
+➜  lab2 git:(main) ✗ mkdir 444
+➜  lab2 git:(main) ✗ tree
+zsh: command not found: tree
+➜  lab2 git:(main) ✗ tree 
+.
+├── 123
+└── 444
+
+2 directories, 1 file
+➜  lab2 git:(main) ✗ cp 123 444 
+➜  lab2 git:(main) ✗ tree
+.
+├── 123
+└── 444
+    └── 123
+
+2 directories, 2 files
+➜  lab2 git:(main) ✗ nano greeting.sh
+➜  lab2 git:(main) ✗ ./greeting.sh 
+zsh: permission denied: ./greeting.sh
+➜  lab2 git:(main) ✗ chmod +x greeting.sh 
+➜  lab2 git:(main) ✗ ./greeting.sh    
+Hello, xexertye!
+➜  lab2 git:(main) ✗ nano current_time.sh
+➜  lab2 git:(main) ✗ pwd | wl-copy
+➜  lab2 git:(main) ✗ ls
+123  444  current_time.sh  greeting.sh
+➜  lab2 git:(main) ✗ rm -rf 444 123
+➜  lab2 git:(main) ✗ nano lab2.txt
+➜  lab2 git:(main) ✗ 
+➜  lab2 git:(main) ✗ ls
+current_time.sh  greeting.sh  tab2.txt
+➜  lab2 git:(main) ✗ nano current_time.sh 
+➜  lab2 git:(main) ✗ vim current_time.sh 
+➜  lab2 git:(main) ✗ ./current_time.sh 
+Time until 18:00: 20466d 491196h 29471760m 1768305600s
+➜  lab2 git:(main) ✗ vim current_time.sh 
+➜  lab2 git:(main) ✗ ./current_time.sh 
+Time until 18:00: 0d 8h 503m 30230s
+➜  lab2 git:(main) ✗ vim current_time.sh
+➜  lab2 git:(main) ✗ ./current_time.sh 
+Time until 18:00: 0d 8h 502m 30158s
+➜  lab2 git:(main) ✗ vim current_time.sh 
+➜  lab2 git:(main) ✗ ./current_time.sh 
+Time until 18:00: 0d 8h 502m 30134s
+➜  lab2 git:(main) ✗ vim current_time.sh 
+➜  lab2 git:(main) ✗ ./current_time.sh 
+Time until 18:00: 0d 8h 11m 28803s
+➜  lab2 git:(main) ✗ vim current_time.sh 
+➜  lab2 git:(main) ✗ ./current_time.sh 
+Time until 18:00: 0d 8h 10m 28826s
+➜  lab2 git:(main) ✗ ./current_time.sh 
+Time until 18:00: 0d 8h 10m 8s
+➜  lab2 git:(main) ✗ ./current_time.sh
+Time until 18:00: 0d 8h 10m 6s
+➜  lab2 git:(main) ✗ ./current_time.sh
+Time until 18:00: 0d 8h 10m 5s
+➜  lab2 git:(main) ✗ ./current_time.sh
+Time until 18:00: 0d 8h 10m 4s
+➜  lab2 git:(main) ✗ ./current_time.sh
+Time until 18:00: 0d 8h 10m 4s
+➜  lab2 git:(main) ✗ ./current_time.sh
+Time until 18:00: 0d 8h 10m 3s
+➜  lab2 git:(main) ✗ ./current_time.sh
+Time until 18:00: 0d 8h 10m 3s
+➜  lab2 git:(main) ✗ ./current_time.sh
+Time until 18:00: 0d 7h 53m 32s
+➜  lab2 git:(main) ✗ ./count_word.sh  
+abacaba
+./count_word.sh: line 10: syntax error near unexpected token `('
+./count_word.sh: line 10: `words = ($content)'
+➜  lab2 git:(main) ✗ ./count_word.sh 
+abacaba
+Amount of words: 1
+➜  lab2 git:(main) ✗ echo abacaba > input.txt
+➜  lab2 git:(main) ✗ cat input.txt 
+abacaba
+➜  lab2 git:(main) ✗ echo abacaba >> input.txt
+➜  lab2 git:(main) ✗ cat input.txt 
+abacaba
+abacaba
+➜  lab2 git:(main) ✗ echo abacaba >> input.txt
+➜  lab2 git:(main) ✗ echo abacaba >> input.txt
+➜  lab2 git:(main) ✗ 
+➜  lab2 git:(main) ✗ echo abacaba >> input.txt
+➜  lab2 git:(main) ✗ ./count_word.sh 
+abacaba
+abacaba
+abacaba
+abacaba
+abacaba
+Amount of words: 5
+➜  lab2 git:(main) ✗ 
+
+➜  lab2 git:(main) ✗ ls
+current_time.sh  greeting.sh  tab2.txt
+➜  lab2 git:(main) ✗ nano current_time.sh
+➜  lab2 git:(main) ✗ vim current_time.sh
+➜  lab2 git:(main) ✗ ./current_time.sh
+Time until 18:00: 20466d 491196h 29471760m 1768305600s
+➜  lab2 git:(main) ✗ vim current_time.sh
+➜  lab2 git:(main) ✗ ./current_time.sh
+Time until 18:00: 0d 8h 503m 30230s
+➜  lab2 git:(main) ✗ vim current_time.sh
+➜  lab2 git:(main) ✗ ./current_time.sh
+Time until 18:00: 0d 8h 502m 30158s
+➜  lab2 git:(main) ✗ vim current_time.sh
+➜  lab2 git:(main) ✗ ./current_time.sh
+Time until 18:00: 0d 8h 502m 30134s
+➜  lab2 git:(main) ✗ vim current_time.sh
+➜  lab2 git:(main) ✗ ./current_time.sh
+Time until 18:00: 0d 8h 11m 28803s
+➜  lab2 git:(main) ✗ vim current_time.sh
+➜  lab2 git:(main) ✗ ./current_time.sh
+Time until 18:00: 0d 8h 10m 28826s
+➜  lab2 git:(main) ✗ ./current_time.sh
+Time until 18:00: 0d 8h 10m 8s
+➜  lab2 git:(main) ✗ ./current_time.sh
+Time until 18:00: 0d 8h 10m 6s
+➜  lab2 git:(main) ✗ ./current_time.sh
+Time until 18:00: 0d 8h 10m 5s
+➜  lab2 git:(main) ✗ ./current_time.sh
+Time until 18:00: 0d 8h 10m 4s
+➜  lab2 git:(main) ✗ ./current_time.sh
+Time until 18:00: 0d 8h 10m 4s
+➜  lab2 git:(main) ✗ ./current_time.sh
+Time until 18:00: 0d 8h 10m 3s
+➜  lab2 git:(main) ✗ ./current_time.sh
+Time until 18:00: 0d 8h 10m 3s
+➜  lab2 git:(main) ✗ ./current_time.sh
+Time until 18:00: 0d 7h 53m 32s
+➜  lab2 git:(main) ✗ ./count_word.sh
+abacaba
+./count_word.sh: line 10: syntax error near unexpected token `('
+./count_word.sh: line 10: `words = ($content)'
+➜  lab2 git:(main) ✗ ./count_word.sh
+abacaba
+Amount of words: 1
+➜  lab2 git:(main) ✗ echo abacaba > input.txt
+➜  lab2 git:(main) ✗ cat input.txt
+abacaba
+➜  lab2 git:(main) ✗ echo abacaba >> input.txt
+➜  lab2 git:(main) ✗ cat input.txt
+abacaba
+abacaba
+➜  lab2 git:(main) ✗ echo abacaba >> input.txt
+➜  lab2 git:(main) ✗ echo abacaba >> input.txt
+➜  lab2 git:(main) ✗
+➜  lab2 git:(main) ✗ echo abacaba >> input.txt
+➜  lab2 git:(main) ✗ ./count_word.sh
+abacaba
+abacaba
+abacaba
+abacaba
+abacaba
+Amount of words: 5
+➜  lab2 git:(main) ✗ vim delete_empty_files.sh
+➜  lab2 git:(main) ✗ ls
+count_word.sh  current_time.sh  input.txt  lab2.txt
+➜  lab2 git:(main) ✗ vim count_word.sh
+➜  lab2 git:(main) ✗ ./count_word.sh
+abacaba
+abacaba
+abacaba
+abacaba
+abacaba
+Amount of words: 5
+➜  lab2 git:(main) ✗ vim delete_empty_files.sh
+➜  lab2 git:(main) ✗ vim delete_empty_files.sh
+➜  lab2 git:(main) ✗ touch empty_file.txt
+➜  lab2 git:(main) ✗ touch empty_file2.txt
+➜  lab2 git:(main) ✗ ls
+count_word.sh    delete_empty_files.sh  empty_file.txt  lab2.txt
+current_time.sh  empty_file2.txt        input.txt
+➜  lab2 git:(main) ✗ ./delete_empty_files.sh
+zsh: permission denied: ./delete_empty_files.sh
+➜  lab2 git:(main) ✗ chmod +x delete_empty_files.sh
+➜  lab2 git:(main) ✗ ./delete_empty_files.sh
+Processing count_word.sh
+cat: file: No such file or directory
+Processing current_time.sh
+cat: file: No such file or directory
+Processing delete_empty_files.sh
+cat: file: No such file or directory
+Processing empty_file2.txt
+cat: file: No such file or directory
+Processing empty_file.txt
+cat: file: No such file or directory
+Processing input.txt
+cat: file: No such file or directory
+Processing lab2.txt
+cat: file: No such file or directory
+➜  lab2 git:(main) ✗ vim delete_empty_files.sh
+➜  lab2 git:(main) ✗ vim delete_empty_files.sh
+➜  lab2 git:(main) ✗ ls
+count_word.sh    delete_empty_files.sh  empty_file.txt  lab2.txt
+current_time.sh  empty_file2.txt        input.txt
+➜  lab2 git:(main) ✗ vim delete_empty_files.sh
+➜  lab2 git:(main) ✗ vim delete_empty_files.sh
+➜  lab2 git:(main) ✗ ./delete_empty_files.sh
+Processing count_word.sh
+Processing current_time.sh
+Processing delete_empty_files.sh
+Processing empty_file2.txt
+Processing empty_file.txt
+Processing input.txt
+Processing lab2.txt
+➜  lab2 git:(main) ✗ ls
+count_word.sh    delete_empty_files.sh  empty_file.txt  lab2.txt
+current_time.sh  empty_file2.txt        input.txt
+➜  lab2 git:(main) ✗ vim delete_empty_files.sh
+➜  lab2 git:(main) ✗ ./delete_empty_files.sh
+Processing count_word.sh
+Processing current_time.sh
+Processing delete_empty_files.sh
+Processing empty_file2.txt
+Processing empty_file.txt
+Processing input.txt
+Processing lab2.txt
+➜  lab2 git:(main) ✗ ls
+count_word.sh  current_time.sh  delete_empty_files.sh  input.txt  lab2.txt
+➜  lab2 git:(main) ✗ vim delete_empty_files.sh
+➜  lab2 git:(main) ✗ touch empty.txt
+➜  lab2 git:(main) ✗ touch empty_file.txt
+➜  lab2 git:(main) ✗ ls
+count_word.sh    delete_empty_files.sh  empty.txt  lab2.txt
+current_time.sh  empty_file.txt         input.txt
+➜  lab2 git:(main) ✗ ./delete_empty_files.sh
+Deleting empty file: empty_file.txt
+Deleting empty file: empty.txt
+➜  lab2 git:(main) ✗ ls
+count_word.sh  current_time.sh  delete_empty_files.sh  input.txt  lab2.txt
+➜  lab2 git:(main) ✗
