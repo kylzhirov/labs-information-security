@@ -1,0 +1,68 @@
+➜  lab6 git:(main) ✗ touch file.txt
+➜  lab6 git:(main) ✗ ls -la
+total 0
+drwxr-xr-x 2 xexertye xexertye  22 Jan 20 09:46 .
+drwxr-xr-x 9 xexertye xexertye 107 Jan 20 09:43 ..
+-rw-r--r-- 1 xexertye xexertye   0 Jan 20 09:46 file.txt
+➜  lab6 git:(main) ✗ man ls
+➜  lab6 git:(main) ✗ id xexertye
+uid=1000(xexertye) gid=1000(xexertye) groups=1000(xexertye),10(wheel),18(audio),27(video),97(input),100(users),202(seat)
+➜  lab6 git:(main) ✗ chmod 754 file.txt 
+➜  lab6 git:(main) ✗ ls -l file.txt 
+-rwxr-xr-- 1 xexertye xexertye 0 Jan 20 09:46 file.txt
+➜  lab6 git:(main) ✗ users list
+➜  lab6 git:(main) ✗ sudo userdel lame
+➜  lab6 git:(main) ✗ sudo useradd lame
+useradd: warning: the home directory /home/lame already exists.
+useradd: Not copying any file from skel directory into it.
+Creating mailbox file: File exists
+➜  lab6 git:(main) ✗ sudo userdel -r lame
+➜  lab6 git:(main) ✗ cat /etc/passwd | grep lame
+➜  lab6 git:(main) ✗ touch file2.txt
+➜  lab6 git:(main) ✗ chmod 017 file2.txt 
+➜  lab6 git:(main) ✗ cat file2.txt 
+cat: file2.txt: Permission denied
+➜  lab6 git:(main) ✗ nano execute.sh
+➜  lab6 git:(main) ✗ touch execute.sh
+➜  lab6 git:(main) ✗ echo 'echo 123' > execute.sh 
+➜  lab6 git:(main) ✗ ./execute.sh 
+zsh: permission denied: ./execute.sh
+➜  lab6 git:(main) ✗ chmod +x execute.sh 
+➜  lab6 git:(main) ✗ ./execute.sh 
+123
+➜  lab6 git:(main) ✗ ls -l execute.sh 
+-rwxr-xr-x 1 xexertye xexertye 9 Jan 20 09:54 execute.sh
+➜  lab6 git:(main) ✗ sudo useradd lame
+➜  lab6 git:(main) ✗ man chown  
+➜  lab6 git:(main) ✗ groups
+wheel audio video input users seat xexertye
+➜  lab6 git:(main) ✗ chown lame:input execute.sh 
+chown: changing ownership of 'execute.sh': Operation not permitted
+➜  lab6 git:(main) ✗ sudo chown lame:input execute.sh
+➜  lab6 git:(main) ✗ groups lame
+lame
+➜  lab6 git:(main) ✗ sudo usermod -a -G input lame
+➜  lab6 git:(main) ✗ groups lame
+input lame
+➜  lab6 git:(main) ✗ ls -l execute.sh 
+-rwxr-xr-x 1 lame input 9 Jan 20 09:54 execute.sh
+➜  lab6 git:(main) ✗ sudo usermod -a -G           
+➜  lab6 git:(main) ✗ sudo -u lame sh -c "echo '654' >> file2.txt"
+➜  lab6 git:(main) ✗ touch file2.txt 
+➜  lab6 git:(main) ✗ ls -l file2.txt 
+------xrwx 1 xexertye xexertye 4 Jan 20 09:59 file2.txt
+➜  lab6 git:(main) ✗ sudo chown lame:input file2.txt 
+➜  lab6 git:(main) ✗ sudo -u lame sh -c "echo '654' >> file2.txt"
+sh: line 1: file2.txt: Permission denied
+➜  lab6 git:(main) ✗ ls -l file2.txt 
+------xrwx 1 lame input 4 Jan 20 09:59 file2.txt
+➜  lab6 git:(main) ✗ sudo -u lame sh -c "echo '654' >> file2.txt"
+➜  lab6 git:(main) ✗ chmod 700 file2.txt 
+chmod: changing permissions of 'file2.txt': Operation not permitted
+➜  lab6 git:(main) ✗ sudo chmod 700 file2.txt
+➜  lab6 git:(main) ✗ sudo -u lame sh -c "echo '654' >> file2.txt"
+➜  lab6 git:(main) ✗ cat file2.txt 
+cat: file2.txt: Permission denied
+➜  lab6 git:(main) ✗ sudo -u lame cat file2.txt 
+654
+654

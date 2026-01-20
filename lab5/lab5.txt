@@ -1,0 +1,152 @@
+➜  lab5 git:(main) sudo userdel user1
+➜  lab5 git:(main) sudo useradd user1
+useradd: warning: the home directory /home/user1 already exists.
+useradd: Not copying any file from skel directory into it.
+Creating mailbox file: File exists
+➜  lab5 git:(main) sudo userdel -r user1
+➜  lab5 git:(main) sudo useradd user1   
+➜  lab5 git:(main) cat /etc/passwd | grep user1
+user1:x:1001:1001::/home/user1:/bin/bash
+➜  lab5 git:(main) su -l user1
+Password: 
+su: Authentication failure
+➜  lab5 git:(main) sudo passwd user1
+
+You can now choose the new password or passphrase.
+
+A valid password should be a mix of upper and lower case letters, digits, and
+other characters.  You can use a password containing at least 7 characters
+from all of these classes, or a password containing at least 8 characters
+from just 3 of these 4 classes.
+An upper case letter that begins the password and a digit that ends it do not
+count towards the number of character classes used.
+
+A passphrase should be of at least 3 words, 11 to 72 characters long, and
+contain enough different characters.
+
+Alternatively, if no one else can see your terminal now, you can pick this as
+your password: "plague9Scar6Hide".
+
+Enter new password: 
+Weak password: too short.
+Re-type new password: 
+passwd: password updated successfully
+➜  lab5 git:(main) su -l user1      
+Password: 
+123
+123
+123
+123
+su: Authentication failure
+➜  lab5 git:(main) 123
+zsh: command not found: 123
+➜  lab5 git:(main) 123
+zsh: command not found: 123
+➜  lab5 git:(main) 123
+zsh: command not found: 123
+➜  lab5 git:(main) 123
+zsh: command not found: 123
+➜  lab5 git:(main) su -l user1
+Password: 
+user1@xog ~ $ whoami
+user1
+user1@xog ~ $ chfn
+Password: 
+Changing the user information for user1
+Enter the new value, or press ENTER for the default
+	Full Name: 
+	Room Number []: 123
+	Work Phone []: 99998888123123123
+	Home Phone []: 123
+user1@xog ~ $ pkill -Kill -u user1
+Killed
+➜  lab5 git:(main) su -l user1
+Password: 
+Last login: Tue Jan 20 09:34:19 +06 2026 on pts/0
+user1@xog ~ $ pkill -kill -u user1
+Killed
+➜  lab5 git:(main) man pkill
+➜  lab5 git:(main) 
+➜  lab5 git:(main) su -l user1
+Password: 
+Last login: Tue Jan 20 09:35:46 +06 2026 on pts/0
+user1@xog ~ $ pkill -u user1
+user1@xog ~ $ pkill -kill -u -user1
+pkill: invalid user name: -user1
+user1@xog ~ $ pkill -KILL -u -user1
+pkill: invalid user name: -user1
+user1@xog ~ $ pkill -u user1
+user1@xog ~ $ pkill -9 -u user1
+Killed
+➜  lab5 git:(main) man pkill
+➜  lab5 git:(main) deluser -r --force user1
+zsh: command not found: deluser
+➜  lab5 git:(main) userdel -r --force user1
+userdel: Permission denied.
+userdel: cannot lock /etc/passwd; try again later.
+➜  lab5 git:(main) sudo userdel -r --force user1
+➜  lab5 git:(main) sudo useradd user123
+➜  lab5 git:(main) man usermod
+➜  lab5 git:(main) sudo usermod -a -G video
+Usage: usermod [options] LOGIN
+
+Options:
+  -a, --append                  append the user to the supplemental GROUPS
+                                mentioned by the -G option without removing
+                                the user from other groups
+  -b, --badname                 allow bad names
+  -c, --comment COMMENT         new value of the GECOS field
+  -d, --home HOME_DIR           new home directory for the user account
+  -e, --expiredate EXPIRE_DATE  set account expiration date to EXPIRE_DATE
+  -f, --inactive INACTIVE       set password inactive after expiration
+                                to INACTIVE
+  -g, --gid GROUP               force use GROUP as new primary group
+  -G, --groups GROUPS           new list of supplementary GROUPS
+  -h, --help                    display this help message and exit
+  -l, --login NEW_LOGIN         new value of the login name
+  -L, --lock                    lock the user account
+  -m, --move-home               move contents of the home directory to the
+                                new location (use only with -d)
+  -o, --non-unique              allow using duplicate (non-unique) UID
+  -p, --password PASSWORD       use encrypted password for the new password
+  -P, --prefix PREFIX_DIR       prefix directory where are located the /etc/* files
+  -r, --remove                  remove the user from only the supplemental GROUPS
+                                mentioned by the -G option without removing
+                                the user from other groups
+  -R, --root CHROOT_DIR         directory to chroot into
+  -s, --shell SHELL             new login shell for the user account
+  -u, --uid UID                 new UID for the user account
+  -U, --unlock                  unlock the user account
+  -v, --add-subuids FIRST-LAST  add range of subordinate uids
+  -V, --del-subuids FIRST-LAST  remove range of subordinate uids
+  -w, --add-subgids FIRST-LAST  add range of subordinate gids
+  -W, --del-subgids FIRST-LAST  remove range of subordinate gids
+
+➜  lab5 git:(main) sudo usermod -a -G video user123
+➜  lab5 git:(main) groups user123
+video user123
+➜  lab5 git:(main) cat /etc/passwd | grep user1
+user123:x:1001:1001::/home/user123:/bin/bash
+➜  lab5 git:(main) sudo deluser --remove-home --force user1
+sudo: deluser: command not found
+➜  lab5 git:(main) sudo userdel --remove-home --force user1
+userdel: unrecognized option '--remove-home'
+Usage: userdel [options] LOGIN
+
+Options:
+  -f, --force                   force some actions that would fail otherwise
+                                e.g. removal of user still logged in
+                                or files, even if not owned by the user
+  -h, --help                    display this help message and exit
+  -r, --remove                  remove home directory and mail spool
+  -R, --root CHROOT_DIR         directory to chroot into
+  -P, --prefix PREFIX_DIR       prefix directory where are located the /etc/* files
+
+➜  lab5 git:(main) sudo userdel -r -f user1                
+userdel: user 'user1' does not exist
+➜  lab5 git:(main) sudo userdel -r -f user1
+userdel: user 'user1' does not exist
+➜  lab5 git:(main) cat /etc/passwd | grep user1
+user123:x:1001:1001::/home/user123:/bin/bash
+➜  lab5 git:(main) sudo userdel -r -f user123
+➜  lab5 git:(main) nano lab5.txt

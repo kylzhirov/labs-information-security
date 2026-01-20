@@ -1,0 +1,238 @@
+➜  lab7 git:(main) ✗ crontab
+crontab: usage error: file name or - (for stdin) must be specified
+Usage:
+ crontab [options] file
+ crontab [options]
+ crontab -n [hostname]
+
+Options:
+ -u <user>  define user
+ -e         edit user's crontab
+ -l         list user's crontab
+ -r         delete user's crontab
+ -i         prompt before deleting
+ -n <host>  set host in cluster to run users' crontabs
+ -c         get host in cluster to run users' crontabs
+ -T <file>  test a crontab file syntax
+ -V         print version and exit
+ -x <mask>  enable debugging
+
+Default operation is replace, per 1003.2
+➜  lab7 git:(main) ✗ man crontab
+➜  lab7 git:(main) ✗ sudo userdel -r lame
+Password: 
+➜  lab7 git:(main) ✗ cat /etc/passwd     
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/bin/false
+daemon:x:2:2:daemon:/sbin:/bin/false
+➜  lab7 git:(main) ✗ eix cronie
+[I] sys-process/cronie
+     Available versions:  1.7.2{gpkg} {+anacron +inotify pam selinux}
+     Installed versions:  1.7.2{gpkg}(03:29:38 PM 05/30/2024)(anacron inotify pam -selinux)
+     Homepage:            https://github.com/cronie-crond/cronie
+     Description:         Cronie is a standard UNIX daemon cron based on the original vixie-cron
+
+➜  lab7 git:(main) ✗ crontab -l
+'/var/spool/cron/crontabs' is not a directory, bailing out.
+➜  lab7 git:(main) ✗ crontab -l -u xexertye
+must be privileged to use -u
+➜  lab7 git:(main) ✗ sudo crontab -l -u xexertye
+Password: 
+no crontab for xexertye
+➜  lab7 git:(main) ✗ sudo crontab -e -u xexertye
+no crontab for xexertye - using an empty one
+Authorization required, but no authorization protocol specified
+
+crontab: no changes made to crontab
+➜  lab7 git:(main) ✗ touch file.txt
+➜  lab7 git:(main) ✗ nano write_line.sh
+➜  lab7 git:(main) ✗ chmod +x write_line.sh 
+➜  lab7 git:(main) ✗ sudo crontab -e -u xexertye
+no crontab for xexertye - using an empty one
+Authorization required, but no authorization protocol specified
+
+crontab: installing new crontab
+➜  lab7 git:(main) ✗ cat file.txt 
+➜  lab7 git:(main) ✗ cat file.txt
+➜  lab7 git:(main) ✗ sudo crontab -e -u xexertye
+Authorization required, but no authorization protocol specified
+
+crontab: no changes made to crontab
+➜  lab7 git:(main) ✗ cat ~/file.txt
+cat: /home/xexertye/file.txt: No such file or directory
+➜  lab7 git:(main) ✗ ls                 
+file.txt  write_line.sh
+➜  lab7 git:(main) ✗ cp write_line.sh file.txt ~/ 
+➜  lab7 git:(main) ✗ sudo crontab -e -u xexertye 
+Authorization required, but no authorization protocol specified
+
+crontab: installing new crontab
+Backup of xexertye's previous crontab saved to /root/.cache/crontab/crontab.xexertye.bak
+➜  lab7 git:(main) ✗ chmod +x ~/write_line.sh 
+➜  lab7 git:(main) ✗ ls ~/file.txt              
+/home/xexertye/file.txt
+➜  lab7 git:(main) ✗ cat ~/file.txt 
+New line at Tue Jan 20 10:22:00 AM +06 2026
+➜  lab7 git:(main) ✗ cat ~/file.txt
+New line at Tue Jan 20 10:22:00 AM +06 2026
+➜  lab7 git:(main) ✗ cat ~/file.txt
+New line at Tue Jan 20 10:22:00 AM +06 2026
+➜  lab7 git:(main) ✗ cat ~/file.txt
+New line at Tue Jan 20 10:22:00 AM +06 2026
+➜  lab7 git:(main) ✗ cat ~/file.txt
+New line at Tue Jan 20 10:22:00 AM +06 2026
+➜  lab7 git:(main) ✗ cat ~/file.txt
+New line at Tue Jan 20 10:22:00 AM +06 2026
+➜  lab7 git:(main) ✗ cat ~/file.txt
+New line at Tue Jan 20 10:22:00 AM +06 2026
+➜  lab7 git:(main) ✗ cat ~/file.txt
+New line at Tue Jan 20 10:22:00 AM +06 2026
+➜  lab7 git:(main) ✗ cat ~/file.txt
+New line at Tue Jan 20 10:22:00 AM +06 2026
+➜  lab7 git:(main) ✗ cat ~/file.txt
+New line at Tue Jan 20 10:22:00 AM +06 2026
+➜  lab7 git:(main) ✗ cat ~/file.txt
+New line at Tue Jan 20 10:22:00 AM +06 2026
+➜  lab7 git:(main) ✗ cat ~/file.txt
+New line at Tue Jan 20 10:22:00 AM +06 2026
+➜  lab7 git:(main) ✗ date
+Tue Jan 20 10:23:17 AM +06 2026
+➜  lab7 git:(main) ✗ nano ~/write_line.sh 
+➜  lab7 git:(main) ✗ cat ~/file.txt 
+New line at Tue Jan 20 10:22:00 AM +06 2026
+➜  lab7 git:(main) ✗ cat ~/file.txt
+New line at Tue Jan 20 10:22:00 AM +06 2026
+➜  lab7 git:(main) ✗ cat ~/file.txt
+New line at Tue Jan 20 10:22:00 AM +06 2026
+➜  lab7 git:(main) ✗ cat ~/file.txt
+New line at Tue Jan 20 10:22:00 AM +06 2026
+➜  lab7 git:(main) ✗ cat ~/file.txt
+New line at Tue Jan 20 10:22:00 AM +06 2026
+➜  lab7 git:(main) ✗ cat ~/file.txt
+New line at Tue Jan 20 10:22:00 AM +06 2026
+➜  lab7 git:(main) ✗ sudo crontab -e -u xexertye
+Authorization required, but no authorization protocol specified
+
+crontab: no changes made to crontab
+➜  lab7 git:(main) ✗ nano ~/write_line.sh 
+➜  lab7 git:(main) ✗ cat ~/file.txt 
+New line at Tue Jan 20 10:22:00 AM +06 2026
+➜  lab7 git:(main) ✗ nano ~/write_line.sh 
+➜  lab7 git:(main) ✗ sudo crontab -e -u xexertye
+Authorization required, but no authorization protocol specified
+
+crontab: installing new crontab
+Backup of xexertye's previous crontab saved to /root/.cache/crontab/crontab.xexertye.bak
+➜  lab7 git:(main) ✗ ls ~/write_line.sh 
+/home/xexertye/write_line.sh
+➜  lab7 git:(main) ✗ cat ~/file.txt 
+New line at Tue Jan 20 10:22:00 AM +06 2026
+➜  lab7 git:(main) ✗ tail -f ~/cron.log
+
+tail: cannot open '/home/xexertye/cron.log' for reading: No such file or directory
+tail: no files remaining
+➜  lab7 git:(main) ✗ ls                
+
+file.txt  write_line.sh
+➜  lab7 git:(main) ✗ cat /etc/crontab
+# Global variables
+SHELL=/bin/bash
+PATH=/sbin:/bin:/usr/sbin:/usr/bin
+MAILTO=root
+HOME=/
+
+# For details see man 5 crontab
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name  command to be executed
+
+➜  lab7 git:(main) ✗ cat /etc/cron.d/0hourly 
+# Run the hourly jobs
+SHELL=/bin/bash
+PATH=/sbin:/bin:/usr/sbin:/usr/bin
+MAILTO=root
+01 * * * * root run-parts /etc/cron.hourly
+➜  lab7 git:(main) ✗ cat /etc/cron.deny 
+# If for any reason you have users in the 'cron' group who should not
+# be allowed to run crontab, add them to this file (one username per
+# line)
+
+➜  lab7 git:(main) ✗ cat /etc/cron.d/0hourly 
+# Run the hourly jobs
+SHELL=/bin/bash
+PATH=/sbin:/bin:/usr/sbin:/usr/bin
+MAILTO=root
+01 * * * * root run-parts /etc/cron.hourly
+➜  lab7 git:(main) ✗ sudo crontab -e -u xexertye
+Authorization required, but no authorization protocol specified
+
+crontab: installing new crontab
+Backup of xexertye's previous crontab saved to /root/.cache/crontab/crontab.xexertye.bak
+➜  lab7 git:(main) ✗ touch ~/log.txt
+➜  lab7 git:(main) ✗ mv ~/log.txt ~/cron.log
+➜  lab7 git:(main) ✗ man tail
+➜  lab7 git:(main) ✗ tail -f ~/cron.log 
+/home/xexertye/write_line.sh: line 2: /home/file.txt: Permission denied
+^C
+➜  lab7 git:(main) ✗ ls -l ~/file.txt 
+-rw-r--r-- 1 xexertye xexertye 44 Jan 20 10:22 /home/xexertye/file.txt
+➜  lab7 git:(main) ✗ sudo crontab -e -u xexertye
+Authorization required, but no authorization protocol specified
+
+crontab: installing new crontab
+Backup of xexertye's previous crontab saved to /root/.cache/crontab/crontab.xexertye.bak
+➜  lab7 git:(main) ✗ nano ~/write_line.sh 
+➜  lab7 git:(main) ✗ cat ~/cron.log 
+/home/xexertye/write_line.sh: line 2: /home/file.txt: Permission denied
+/home/xexertye/write_line.sh: line 2: /home/file.txt: Permission denied
+➜  lab7 git:(main) ✗ cat ~/cron.log
+/home/xexertye/write_line.sh: line 2: /home/file.txt: Permission denied
+/home/xexertye/write_line.sh: line 2: /home/file.txt: Permission denied
+➜  lab7 git:(main) ✗ cat ~/file.txt      
+New line at Tue Jan 20 10:22:00 AM +06 2026
+➜  lab7 git:(main) ✗ cat ~/file.txt
+New line at Tue Jan 20 10:22:00 AM +06 2026
+➜  lab7 git:(main) ✗ cat ~/file.txt
+New line at Tue Jan 20 10:22:00 AM +06 2026
+➜  lab7 git:(main) ✗ cat ~/file.txt
+New line at Tue Jan 20 10:22:00 AM +06 2026
+➜  lab7 git:(main) ✗ date
+Tue Jan 20 10:32:01 AM +06 2026
+➜  lab7 git:(main) ✗ cat ~/file.txt
+New line at Tue Jan 20 10:22:00 AM +06 2026
+New line at Tue Jan 20 10:32:00 AM +06 2026
+New line at Tue Jan 20 10:32:00 AM +06 2026
+➜  lab7 git:(main) ✗ cat ~/file.txt
+New line at Tue Jan 20 10:22:00 AM +06 2026
+New line at Tue Jan 20 10:32:00 AM +06 2026
+New line at Tue Jan 20 10:32:00 AM +06 2026
+➜  lab7 git:(main) ✗ cat ~/file.txt
+New line at Tue Jan 20 10:22:00 AM +06 2026
+New line at Tue Jan 20 10:32:00 AM +06 2026
+New line at Tue Jan 20 10:32:00 AM +06 2026
+➜  lab7 git:(main) ✗ date
+Tue Jan 20 10:32:22 AM +06 2026
+➜  lab7 git:(main) ✗ cat ~/file.txt
+New line at Tue Jan 20 10:22:00 AM +06 2026
+New line at Tue Jan 20 10:32:00 AM +06 2026
+New line at Tue Jan 20 10:32:00 AM +06 2026
+➜  lab7 git:(main) ✗ date          
+Tue Jan 20 10:32:51 AM +06 2026
+➜  lab7 git:(main) ✗ date          
+Tue Jan 20 10:32:55 AM +06 2026
+➜  lab7 git:(main) ✗ date
+Tue Jan 20 10:32:59 AM +06 2026
+➜  lab7 git:(main) ✗ date
+Tue Jan 20 10:33:00 AM +06 2026
+➜  lab7 git:(main) ✗ cat ~/file.txt
+New line at Tue Jan 20 10:22:00 AM +06 2026
+New line at Tue Jan 20 10:32:00 AM +06 2026
+New line at Tue Jan 20 10:32:00 AM +06 2026
+New line at Tue Jan 20 10:33:00 AM +06 2026
+New line at Tue Jan 20 10:33:00 AM +06 2026
