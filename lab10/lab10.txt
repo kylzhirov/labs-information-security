@@ -1,0 +1,70 @@
+➜  ~ ls /var/www/localhost/htdocs/index.html                                            
+➜  ~ sudo rc-service nginx restart  
+ * Checking NGINX's configuration ...
+nginx: [emerg] unexpected "}" in /etc/nginx/nginx.conf:45
+nginx: configuration file /etc/nginx/nginx.conf test failed                                            [ !! ]
+ * Configuration check failed, please correct the errors above
+ * ERROR: nginx failed to stop
+➜  ~ sudo rc-service nginx restart
+ * Checking NGINX's configuration ...
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful                                     [ ok ]
+ * Stopping NGINX ...                                                                                  [ ok ]
+ * Starting NGINX ...                                                                                  [ ok ]
+➜  ~ ls /var/www/localhost/htdocs
+index.html
+➜  ~ ls -a /var/www/localhost/htdocs
+.  ..  index.html
+➜  ~ ls -l /var/www/localhost/htdocs
+total 4
+-rw-r--r-- 1 root root 3541 Jan 26 10:11 index.html
+➜  ~ sudo rc-service nginx restart
+ * Checking NGINX's configuration ...
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful                                     [ ok ]
+ * Stopping NGINX ...                                                                                  [ ok ]
+ * Starting NGINX ...                                                                                  [ ok ]
+➜  ~ 
+
+
+ 	server {
+ 	   listen 8000;
+            server_name localhost;
+
+            root /var/www/localhost/htdocs;
+            index index.html;
+        }
+
+  lab10 git:(main) ✗ sudo nginx -t
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+
+
+        server {
+            listen 8000;
+            server_name localhost;
+
+            root /var/www/localhost/htdocs;
+            index index.html;
+
+            location /customers {
+                proxy_pass http://localhost:4445/api;
+                proxy_set_header Host $host;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            }
+        }
+
+➜  ~ sudo rc-service nginx start
+Password: 
+ * WARNING: nginx has already been started
+➜  ~ sudo rc-service nginx restart
+ * Checking NGINX's configuration ...
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successf [ ok ]
+ * Stopping NGINX ...                                            [ ok ]
+ * Starting NGINX ...                                            [ ok ]
+➜  ~ curl localhost:8000/customers
+{"timestamp":"2026-01-27T04:00:32.743+00:00","status":404,"error":"Not Found","path":"/api"}%  
+
+

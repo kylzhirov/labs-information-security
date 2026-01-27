@@ -1,0 +1,549 @@
+tbase-everywhere-src-5.15.18_build/include/QtWidgets -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18/include/QtWidgets/5.15.18 -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18/include/QtWidgets/5.15.18/QtWidgets -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18_build/include/QtWidgets/5.15.18 -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18_build/include/QtWidgets/5.15.18/QtWidgets -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18_build/src/widgets/.tracegen -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18_build/src/widgets/.uic -I/usr/include/qt5/QtGui/5.15.18 -I/usr/include/qt5/QtGui/5.15.18/QtGui -I/usr/include/qt5/QtCore/5.15.18 -I/usr/include/qt5/QtCore/5.15.18/QtCore -I/usr/include/qt5 -I/usr/include/qt5/QtGui -I/usr/include/qt5/QtCore -I. -I/usr/lib/gcc/x86_64-pc-linux-gnu/15/include/g++-v15 -I/usr/lib/gcc/x86_64-pc-linux-gnu/15/include/g++-v15/x86_64-pc-linux-gnu -I/usr/lib/gcc/x86_64-pc-linux-gnu/15/include/g++-v15/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/15/include -I/usr/include --output-json /var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18/src/widgets/kernel/qboxlayout.h -o .moc/moc_qboxlayout.cpp
+/usr/lib64/qt5/bin/moc -DQT_NO_LINKED_LIST -DQT_NO_JAVA_STYLE_ITERATORS -DQT_NO_USING_NAMESPACE -DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT -DQT_BUILD_WIDGETS_LIB -DQT_BUILDING_QT -DQT_NO_CAST_TO_ASCII -DQT_ASCII_CAST_WARNINGS -DQT_MOC_COMPAT -DQT_USE_QSTRINGBUILDER -DQT_DEPRECATED_WARNINGS -DQT_DISABLE_DEPRECATED_BEFORE=0x050000 -DQT_DEPRECATED_WARNINGS_SINCE=0x060000 -DQT_NO_EXCEPTIONS -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB --include /var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18_build/src/widgets/.moc/moc_predefs.h -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18/mkspecs/linux-g++ -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18/src/widgets -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18/src/widgets/dialogs -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18/include -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18/include/QtWidgets -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18_build/include -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18_build/include/QtWidgets -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18/include/QtWidgets/5.15.18 -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18/include/QtWidgets/5.15.18/QtWidgets -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18_build/include/QtWidgets/5.15.18 -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18_build/include/QtWidgets/5.15.18/QtWidgets -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18_build/src/widgets/.tracegen -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18_build/src/widgets/.uic -I/usr/include/qt5/QtGui/5.15.18 -I/usr/include/qt5/QtGui/5.15.18/QtGui -I/usr/include/qt5/QtCore/5.15.18 -I/usr/include/qt5/QtCore/5.15.18/QtCore -I/usr/include/qt5 -I/usr/include/qt5/QtGui -I/usr/include/qt5/QtCore -I. -I/usr/lib/gcc/x86_64-pc-linux-gnu/15/include/g++-v15 -I/usr/lib/gcc/x86_64-pc-linux-gnu/15/include/g++-v15/x86_64-pc-linux-gnu -I/usr/lib/gcc/x86_64-pc-linux-gnu/15/include/g++-v15/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/15/include -I/usr/include --output-json /var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18/src/widgets/kernel/qapplication.h -o .moc/moc_qapplication.cpp
+/usr/lib64/qt5/bin/moc -DQT_NO_LINKED_LIST -DQT_NO_JAVA_STYLE_ITERATORS -DQT_NO_USING_NAMESPACE -DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT -DQT_BUILD_WIDGETS_LIB -DQT_BUILDING_QT -DQT_NO_CAST_TO_ASCII -DQT_ASCII_CAST_WARNINGS -DQT_MOC_COMPAT -DQT_USE_QSTRINGBUILDER -DQT_DEPRECATED_WARNINGS -DQT_DISABLE_DEPRECATED_BEFORE=0x050000 -DQT_DEPRECATED_WARNINGS_SINCE=0x060000 -DQT_NO_EXCEPTIONS -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB --include /var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18_build/src/widgets/.moc/moc_predefs.h -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18/mkspecs/linux-g++ -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18/src/widgets -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18/src/widgets/dialogs -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18/include -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18/include/QtWidgets -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18_build/include -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18_build/include/QtWidgets -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18/include/QtWidgets/5.15.18 -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18/include/QtWidgets/5.15.18/QtWidgets -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18_build/include/QtWidgets/5.15.18 -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18_build/include/QtWidgets/5.15.18/QtWidgets -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18_build/src/widgets/.tracegen -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18_build/src/widgets/.uic -I/usr/include/qt5/QtGui/5.15.18 -I/usr/include/qt5/QtGui/5.15.18/QtGui -I/usr/include/qt5/QtCore/5.15.18 -I/usr/include/qt5/QtCore/5.15.18/QtCore -I/usr/include/qt5 -I/usr/include/qt5/QtGui -I/usr/include/qt5/QtCore -I. -I/usr/lib/gcc/x86_64-pc-linux-gnu/15/include/g++-v15 -I/usr/lib/gcc/x86_64-pc-linux-gnu/15/include/g++-v15/x86_64-pc-linux-gnu -I/usr/lib/gcc/x86_64-pc-linux-gnu/15/include/g++-v15/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/15/include -I/usr/include --output-json /var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18/src/widgets/kernel/qdesktopwidget.h -o .moc/moc_qdesktopwidget.cpp
+/usr/lib64/qt5/bin/moc -DQT_NO_LINKED_LIST -DQT_NO_JAVA_STYLE_ITERATORS -DQT_NO_USING_NAMESPACE -DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT -DQT_BUILD_WIDGETS_LIB -DQT_BUILDING_QT -DQT_NO_CAST_TO_ASCII -DQT_ASCII_CAST_WARNINGS -DQT_MOC_COMPAT -DQT_USE_QSTRINGBUILDER -DQT_DEPRECATED_WARNINGS -DQT_DISABLE_DEPRECATED_BEFORE=0x050000 -DQT_DEPRECATED_WARNINGS_SINCE=0x060000 -DQT_NO_EXCEPTIONS -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB --include /var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18_build/src/widgets/.moc/moc_predefs.h -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18/mkspecs/linux-g++ -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18/src/widgets -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18/src/widgets/dialogs -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18/include -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18/include/QtWidgets -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18_build/include -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18_build/include/QtWidgets -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18/include/QtWidgets/5.15.18 -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18/include/QtWidgets/5.15.18/QtWidgets -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18_build/include/QtWidgets/5.15.18 -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18_build/include/QtWidgets/5.15.18/QtWidgets -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18_build/src/widgets/.tracegen -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18_build/src/widgets/.uic -I/usr/include/qt5/QtGui/5.15.18 -I/usr/include/qt5/QtGui/5.15.18/QtGui -I/usr/include/qt5/QtCore/5.15.18 -I/usr/include/qt5/QtCore/5.15.18/QtCore -I/usr/include/qt5 -I/usr/include/qt5/QtGui -I/usr/include/qt5/QtCore -I. -I/usr/lib/gcc/x86_64-pc-linux-gnu/15/include/g++-v15 -I/usr/lib/gcc/x86_64-pc-linux-gnu/15/include/g++-v15/x86_64-pc-linux-gnu -I/usr/lib/gcc/x86_64-pc-linux-gnu/15/include/g++-v15/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/15/include -I/usr/include --output-json /var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18/src/widgets/kernel/qgridlayout.h -o .moc/moc_qgridlayout.cpp
+/usr/lib64/qt5/bin/moc -DQT_NO_LINKED_LIST -DQT_NO_JAVA_STYLE_ITERATORS -DQT_NO_USING_NAMESPACE -DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT -DQT_BUILD_WIDGETS_LIB -DQT_BUILDING_QT -DQT_NO_CAST_TO_ASCII -DQT_ASCII_CAST_WARNINGS -DQT_MOC_COMPAT -DQT_USE_QSTRINGBUILDER -DQT_DEPRECATED_WARNINGS -DQT_DISABLE_DEPRECATED_BEFORE=0x050000 -DQT_DEPRECATED_WARNINGS_SINCE=0x060000 -DQT_NO_EXCEPTIONS -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB --include /var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18_build/src/widgets/.moc/moc_predefs.h -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18/mkspecs/linux-g++ -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18/src/widgets -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18/src/widgets/dialogs -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18/include -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18/include/QtWidgets -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18_build/include -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18_build/include/QtWidgets -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18/include/QtWidgets/5.15.18 -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18/include/QtWidgets/5.15.18/QtWidgets -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18_build/include/QtWidgets/5.15.18 -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18_build/include/QtWidgets/5.15.18/QtWidgets -I/var/tmp/portage/dev-qt/qtwidgets-5.15.18/work/qtbase-everywhere-src-5.15.18_build/src/widgets/.tracegen -I/var/tmp/portage/dev-qt/qtwidgets-5.1((pip-venv) ) ➜  lab9 git:(main) ✗ sudo emerge -vak www-servers/nginx
+
+ * IMPORTANT: 28 news items need reading for repository 'gentoo'.
+ * Use eselect news read to view new items.
+
+
+These are the packages that would be merged, in order:
+
+Calculating dependencies... done!
+Dependency resolution took 2.99 s (backtrack: 0/20).
+
+[binary   R    ] app-misc/mime-types-2.1.54-2::gentoo  USE="nginx*" 40 KiB
+[binary  N     ] acct-group/nginx-0-r2-1::gentoo  20 KiB
+[binary  N     ] acct-user/nginx-0-r2-1::gentoo  USE="-icingaweb2 -mgraph" 0 KiB
+[binary  N     ] www-servers/nginx-1.29.3-r3-1:mainline/1.29.3::gentoo  USE="http modules -aio -debug -libatomic -mail (-selinux) -stream -test" NGINX_MODULES_HTTP="access auth_basic autoindex browser charset empty_gif fastcgi geo grpc gzip limit_conn limit_req map memcached mirror proxy referer rewrite scgi split_clients ssi ssl upstream_hash upstream_ip_hash upstream_keepalive upstream_least_conn upstream_random upstream_zone userid uwsgi -addition -auth_request -dav -degradation -flv -geoip -gunzip -gzip_static -image_filter -mp4 -perl -random_index -realip -secure_link -slice -stub_status -sub -v2 -v3 -xslt" NGINX_MODULES_MAIL="imap pop3 smtp ssl" NGINX_MODULES_STREAM="access geo limit_conn map pass return set split_clients ssl upstream_hash upstream_least_conn upstream_random upstream_zone -geoip -realip -ssl_preread" 600 KiB
+
+Total: 4 packages (3 new, 1 reinstall, 4 binaries), Size of downloads: 660 KiB
+
+Would you like to merge these packages? [Yes/No] Yes
+
+>>> Running pre-merge checks for acct-group/nginx-0-r2
+--2026-01-26 09:51:39--  https://mirror.ps.kz/gentoo/pub/releases/amd64/binpackages/23.0/x86-64/acct-group/nginx/nginx-0-r2-1.gpkg.tar
+Resolving mirror.ps.kz... 195.210.46.141, 2a00:5da0:1:1::141
+Connecting to mirror.ps.kz|195.210.46.141|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 20480 (20K) [application/octet-stream]
+Saving to: ‘/var/cache/binpkgs/acct-group/nginx/nginx-0-r2-1.gpkg.tar.partial’
+
+/var/cache/binpkgs/acct 100%[============================>]  20.00K  --.-KB/s    in 0.001s  
+
+2026-01-26 09:51:39 (21.7 MB/s) - ‘/var/cache/binpkgs/acct-group/nginx/nginx-0-r2-1.gpkg.tar.partial’ saved [20480/20480]
+
+ * nginx-0-r2-1.gpkg.tar MD5 SHA1 size ;-) ...                           [ ok ]
+
+>>> Running pre-merge checks for acct-user/nginx-0-r2
+ * nginx-0-r2-1.gpkg.tar MD5 SHA1 size ;-) ...                           [ ok ]
+
+>>> Emerging binary (1 of 4) app-misc/mime-types-2.1.54::gentoo
+ * mime-types-2.1.54-2.gpkg.tar MD5 SHA1 size ;-) ...                    [ ok ]
+>>> Extracting info
+>>> Extracting app-misc/mime-types-2.1.54
+
+>>> Installing (1 of 4) app-misc/mime-types-2.1.54::gentoo
+ * checking 2 files for package collisions
+>>> Merging app-misc/mime-types-2.1.54 to /
+--- /etc/
+>>> /etc/nginx/
+>>> /etc/nginx/mime.types.nginx
+=== /etc/mime.types
+>>> Safely unmerging already-installed instance...
+--- replaced obj /etc/mime.types
+--- replaced dir /etc
+>>> Original instance of package unmerged safely.
+>>> app-misc/mime-types-2.1.54 merged.
+
+>>> Completed (1 of 4) app-misc/mime-types-2.1.54::gentoo
+
+>>> Emerging binary (2 of 4) acct-group/nginx-0-r2::gentoo
+ * nginx-0-r2-1.gpkg.tar MD5 SHA1 size ;-) ...                           [ ok ]
+>>> Extracting info
+>>> Extracting acct-group/nginx-0-r2
+
+>>> Installing (2 of 4) acct-group/nginx-0-r2::gentoo
+ * checking 1 files for package collisions
+>>> Merging acct-group/nginx-0-r2 to /
+ * Adding group nginx
+--- /usr/
+--- /usr/lib/
+--- /usr/lib/sysusers.d/
+>>> /usr/lib/sysusers.d/acct-group-nginx.conf
+>>> acct-group/nginx-0-r2 merged.
+
+>>> Completed (2 of 4) acct-group/nginx-0-r2::gentoo
+
+>>> Emerging binary (3 of 4) acct-user/nginx-0-r2::gentoo
+ * nginx-0-r2-1.gpkg.tar MD5 SHA1 size ;-) ...                           [ ok ]
+>>> Extracting info
+>>> Extracting acct-user/nginx-0-r2
+
+>>> Installing (3 of 4) acct-user/nginx-0-r2::gentoo
+ * checking 2 files for package collisions
+>>> Merging acct-user/nginx-0-r2 to /
+ * Adding user nginx
+--- /var/
+--- /var/lib/
+>>> /var/lib/nginx/
+>>> /var/lib/nginx/.keep_acct-user_nginx-0
+--- /usr/
+--- /usr/lib/
+--- /usr/lib/sysusers.d/
+>>> /usr/lib/sysusers.d/acct-user-nginx.conf
+>>> acct-user/nginx-0-r2 merged.
+
+>>> Completed (3 of 4) acct-user/nginx-0-r2::gentoo
+
+>>> Emerging binary (4 of 4) www-servers/nginx-1.29.3-r3::gentoo
+ * nginx-1.29.3-r3-1.gpkg.tar MD5 SHA1 size ;-) ...                      [ ok ]
+>>> Extracting info
+ * http_grpc is enabled when http_v2 is disabled.
+ * The http_grpc module will not be built if http_v2 is not enabled.
+ * Please enable the nginx_modules_http_v2 USE flag on www-servers/nginx
+ * to use the http_grpc NGINX module. Refer to the Gentoo Handbook for
+ * instructions on how to change USE flags.
+>>> Extracting www-servers/nginx-1.29.3-r3
+
+>>> Installing (4 of 4) www-servers/nginx-1.29.3-r3::gentoo
+ * checking 230 files for package collisions
+>>> Merging www-servers/nginx-1.29.3-r3 to /
+--- /var/
+>>> /var/www/
+>>> /var/www/.keep_www-servers_nginx-mainline
+--- /var/log/
+>>> /var/log/nginx/
+>>> /var/log/nginx/.keep_www-servers_nginx-mainline
+--- /usr/
+--- /usr/src/
+>>> /usr/src/nginx/
+>>> /usr/src/nginx/configure
+>>> /usr/src/nginx/auto/
+>>> /usr/src/nginx/auto/unix
+>>> /usr/src/nginx/auto/types/
+>>> /usr/src/nginx/auto/types/value
+>>> /usr/src/nginx/auto/types/uintptr_t
+>>> /usr/src/nginx/auto/types/typedef
+>>> /usr/src/nginx/auto/types/sizeof
+>>> /usr/src/nginx/auto/threads
+>>> /usr/src/nginx/auto/summary
+>>> /usr/src/nginx/auto/stubs
+>>> /usr/src/nginx/auto/sources
+>>> /usr/src/nginx/auto/os/
+>>> /usr/src/nginx/auto/os/win32
+>>> /usr/src/nginx/auto/os/solaris
+>>> /usr/src/nginx/auto/os/linux
+>>> /usr/src/nginx/auto/os/freebsd
+>>> /usr/src/nginx/auto/os/darwin
+>>> /usr/src/nginx/auto/os/conf
+>>> /usr/src/nginx/auto/options
+>>> /usr/src/nginx/auto/nohave
+>>> /usr/src/nginx/auto/modules
+>>> /usr/src/nginx/auto/module
+>>> /usr/src/nginx/auto/make
+>>> /usr/src/nginx/auto/lib/
+>>> /usr/src/nginx/auto/lib/zlib/
+>>> /usr/src/nginx/auto/lib/zlib/makefile.owc
+>>> /usr/src/nginx/auto/lib/zlib/makefile.msvc
+>>> /usr/src/nginx/auto/lib/zlib/makefile.bcc
+>>> /usr/src/nginx/auto/lib/zlib/make
+>>> /usr/src/nginx/auto/lib/zlib/conf
+>>> /usr/src/nginx/auto/lib/perl/
+>>> /usr/src/nginx/auto/lib/perl/make
+>>> /usr/src/nginx/auto/lib/perl/conf
+>>> /usr/src/nginx/auto/lib/pcre/
+>>> /usr/src/nginx/auto/lib/pcre/makefile.owc
+>>> /usr/src/nginx/auto/lib/pcre/makefile.msvc
+>>> /usr/src/nginx/auto/lib/pcre/makefile.bcc
+>>> /usr/src/nginx/auto/lib/pcre/make
+>>> /usr/src/nginx/auto/lib/pcre/conf
+>>> /usr/src/nginx/auto/lib/openssl/
+>>> /usr/src/nginx/auto/lib/openssl/makefile.msvc
+>>> /usr/src/nginx/auto/lib/openssl/makefile.bcc
+>>> /usr/src/nginx/auto/lib/openssl/make
+>>> /usr/src/nginx/auto/lib/openssl/conf
+>>> /usr/src/nginx/auto/lib/make
+>>> /usr/src/nginx/auto/lib/libxslt/
+>>> /usr/src/nginx/auto/lib/libxslt/conf
+>>> /usr/src/nginx/auto/lib/libgd/
+>>> /usr/src/nginx/auto/lib/libgd/conf
+>>> /usr/src/nginx/auto/lib/libatomic/
+>>> /usr/src/nginx/auto/lib/libatomic/make
+>>> /usr/src/nginx/auto/lib/libatomic/conf
+>>> /usr/src/nginx/auto/lib/google-perftools/
+>>> /usr/src/nginx/auto/lib/google-perftools/conf
+>>> /usr/src/nginx/auto/lib/geoip/
+>>> /usr/src/nginx/auto/lib/geoip/conf
+>>> /usr/src/nginx/auto/lib/conf
+>>> /usr/src/nginx/auto/install
+>>> /usr/src/nginx/auto/init
+>>> /usr/src/nginx/auto/include
+>>> /usr/src/nginx/auto/headers
+>>> /usr/src/nginx/auto/have_headers
+>>> /usr/src/nginx/auto/have
+>>> /usr/src/nginx/auto/feature
+>>> /usr/src/nginx/auto/endianness
+>>> /usr/src/nginx/auto/define
+>>> /usr/src/nginx/auto/cc/
+>>> /usr/src/nginx/auto/cc/sunc
+>>> /usr/src/nginx/auto/cc/owc
+>>> /usr/src/nginx/auto/cc/name
+>>> /usr/src/nginx/auto/cc/msvc
+>>> /usr/src/nginx/auto/cc/icc
+>>> /usr/src/nginx/auto/cc/gcc
+>>> /usr/src/nginx/auto/cc/conf
+>>> /usr/src/nginx/auto/cc/clang
+>>> /usr/src/nginx/auto/cc/ccc
+>>> /usr/src/nginx/auto/cc/bcc
+>>> /usr/src/nginx/auto/cc/acc
+--- /usr/share/
+--- /usr/share/vim/
+--- /usr/share/vim/vimfiles/
+--- /usr/share/vim/vimfiles/syntax/
+>>> /usr/share/vim/vimfiles/syntax/nginx.vim
+--- /usr/share/vim/vimfiles/indent/
+>>> /usr/share/vim/vimfiles/indent/nginx.vim
+--- /usr/share/vim/vimfiles/ftplugin/
+>>> /usr/share/vim/vimfiles/ftplugin/nginx.vim
+--- /usr/share/vim/vimfiles/ftdetect/
+>>> /usr/share/vim/vimfiles/ftdetect/nginx.vim
+--- /usr/share/portage/
+--- /usr/share/portage/config/
+--- /usr/share/portage/config/sets/
+>>> /usr/share/portage/config/sets/nginx-modules.conf
+>>> /usr/share/nginx/
+>>> /usr/share/nginx/win-utf
+>>> /usr/share/nginx/koi-win
+>>> /usr/share/nginx/koi-utf
+>>> /usr/share/nginx/index.html
+>>> /usr/share/nginx/50x.html
+--- /usr/share/man/
+--- /usr/share/man/man8/
+>>> /usr/share/man/man8/nginx.8.bz2
+--- /usr/share/doc/
+>>> /usr/share/doc/nginx-1.29.3-r3/
+>>> /usr/share/doc/nginx-1.29.3-r3/README.md.bz2
+>>> /usr/share/doc/nginx-1.29.3-r3/LICENSE.bz2
+>>> /usr/share/doc/nginx-1.29.3-r3/CHANGES.ru.bz2
+>>> /usr/share/doc/nginx-1.29.3-r3/CHANGES.bz2
+--- /usr/sbin/
+>>> /usr/sbin/nginx
+--- /usr/lib64/
+>>> /usr/lib64/nginx/
+>>> /usr/lib64/nginx/modules/
+>>> /usr/lib64/nginx/modules/.keep_www-servers_nginx-mainline
+--- /usr/lib/
+--- /usr/lib/tmpfiles.d/
+>>> /usr/lib/tmpfiles.d/nginx-tmp.conf
+--- /usr/lib/systemd/
+--- /usr/lib/systemd/system/
+>>> /usr/lib/systemd/system/nginx.service
+--- /usr/include/
+>>> /usr/include/nginx/
+>>> /usr/include/nginx/stream/
+>>> /usr/include/nginx/stream/ngx_stream_variables.h
+>>> /usr/include/nginx/stream/ngx_stream_upstream_round_robin.h
+>>> /usr/include/nginx/stream/ngx_stream_upstream.h
+>>> /usr/include/nginx/stream/ngx_stream_ssl_module.h
+>>> /usr/include/nginx/stream/ngx_stream_script.h
+>>> /usr/include/nginx/stream/ngx_stream.h
+>>> /usr/include/nginx/os/
+>>> /usr/include/nginx/os/win32/
+>>> /usr/include/nginx/os/win32/ngx_win32_config.h
+>>> /usr/include/nginx/os/win32/ngx_user.h
+>>> /usr/include/nginx/os/win32/ngx_time.h
+>>> /usr/include/nginx/os/win32/ngx_thread.h
+>>> /usr/include/nginx/os/win32/ngx_socket.h
+>>> /usr/include/nginx/os/win32/ngx_shmem.h
+>>> /usr/include/nginx/os/win32/ngx_process_cycle.h
+>>> /usr/include/nginx/os/win32/ngx_process.h
+>>> /usr/include/nginx/os/win32/ngx_os.h
+>>> /usr/include/nginx/os/win32/ngx_files.h
+>>> /usr/include/nginx/os/win32/ngx_errno.h
+>>> /usr/include/nginx/os/win32/ngx_dlopen.h
+>>> /usr/include/nginx/os/win32/ngx_atomic.h
+>>> /usr/include/nginx/os/win32/ngx_alloc.h
+>>> /usr/include/nginx/os/unix/
+>>> /usr/include/nginx/os/unix/ngx_user.h
+>>> /usr/include/nginx/os/unix/ngx_time.h
+>>> /usr/include/nginx/os/unix/ngx_thread.h
+>>> /usr/include/nginx/os/unix/ngx_sunpro_atomic_sparc64.h
+>>> /usr/include/nginx/os/unix/ngx_solaris_config.h
+>>> /usr/include/nginx/os/unix/ngx_solaris.h
+>>> /usr/include/nginx/os/unix/ngx_socket.h
+>>> /usr/include/nginx/os/unix/ngx_shmem.h
+>>> /usr/include/nginx/os/unix/ngx_setproctitle.h
+>>> /usr/include/nginx/os/unix/ngx_setaffinity.h
+>>> /usr/include/nginx/os/unix/ngx_process_cycle.h
+>>> /usr/include/nginx/os/unix/ngx_process.h
+>>> /usr/include/nginx/os/unix/ngx_posix_config.h
+>>> /usr/include/nginx/os/unix/ngx_os.h
+>>> /usr/include/nginx/os/unix/ngx_linux_config.h
+>>> /usr/include/nginx/os/unix/ngx_linux.h
+>>> /usr/include/nginx/os/unix/ngx_gcc_atomic_x86.h
+>>> /usr/include/nginx/os/unix/ngx_gcc_atomic_sparc64.h
+>>> /usr/include/nginx/os/unix/ngx_gcc_atomic_ppc.h
+>>> /usr/include/nginx/os/unix/ngx_gcc_atomic_amd64.h
+>>> /usr/include/nginx/os/unix/ngx_freebsd_config.h
+>>> /usr/include/nginx/os/unix/ngx_freebsd.h
+>>> /usr/include/nginx/os/unix/ngx_files.h
+>>> /usr/include/nginx/os/unix/ngx_errno.h
+>>> /usr/include/nginx/os/unix/ngx_dlopen.h
+>>> /usr/include/nginx/os/unix/ngx_darwin_config.h
+>>> /usr/include/nginx/os/unix/ngx_darwin.h
+>>> /usr/include/nginx/os/unix/ngx_channel.h
+>>> /usr/include/nginx/os/unix/ngx_atomic.h
+>>> /usr/include/nginx/os/unix/ngx_alloc.h
+>>> /usr/include/nginx/ngx_auto_headers.h
+>>> /usr/include/nginx/ngx_auto_config.h
+>>> /usr/include/nginx/modules/
+>>> /usr/include/nginx/modules/.keep_www-servers_nginx-mainline
+>>> /usr/include/nginx/mail/
+>>> /usr/include/nginx/mail/ngx_mail_ssl_module.h
+>>> /usr/include/nginx/mail/ngx_mail_smtp_module.h
+>>> /usr/include/nginx/mail/ngx_mail_pop3_module.h
+>>> /usr/include/nginx/mail/ngx_mail_imap_module.h
+>>> /usr/include/nginx/mail/ngx_mail.h
+>>> /usr/include/nginx/http/
+>>> /usr/include/nginx/http/v3/
+>>> /usr/include/nginx/http/v3/ngx_http_v3_uni.h
+>>> /usr/include/nginx/http/v3/ngx_http_v3_table.h
+>>> /usr/include/nginx/http/v3/ngx_http_v3_parse.h
+>>> /usr/include/nginx/http/v3/ngx_http_v3_encode.h
+>>> /usr/include/nginx/http/v3/ngx_http_v3.h
+>>> /usr/include/nginx/http/v2/
+>>> /usr/include/nginx/http/v2/ngx_http_v2_module.h
+>>> /usr/include/nginx/http/v2/ngx_http_v2.h
+>>> /usr/include/nginx/http/ngx_http_variables.h
+>>> /usr/include/nginx/http/ngx_http_upstream_round_robin.h
+>>> /usr/include/nginx/http/ngx_http_upstream.h
+>>> /usr/include/nginx/http/ngx_http_script.h
+>>> /usr/include/nginx/http/ngx_http_request.h
+>>> /usr/include/nginx/http/ngx_http_core_module.h
+>>> /usr/include/nginx/http/ngx_http_config.h
+>>> /usr/include/nginx/http/ngx_http_cache.h
+>>> /usr/include/nginx/http/ngx_http.h
+>>> /usr/include/nginx/http/modules/
+>>> /usr/include/nginx/http/modules/perl/
+>>> /usr/include/nginx/http/modules/perl/ngx_http_perl_module.h
+>>> /usr/include/nginx/http/modules/ngx_http_ssl_module.h
+>>> /usr/include/nginx/http/modules/ngx_http_ssi_filter_module.h
+>>> /usr/include/nginx/event/
+>>> /usr/include/nginx/event/quic/
+>>> /usr/include/nginx/event/quic/ngx_event_quic_transport.h
+>>> /usr/include/nginx/event/quic/ngx_event_quic_tokens.h
+>>> /usr/include/nginx/event/quic/ngx_event_quic_streams.h
+>>> /usr/include/nginx/event/quic/ngx_event_quic_ssl.h
+>>> /usr/include/nginx/event/quic/ngx_event_quic_socket.h
+>>> /usr/include/nginx/event/quic/ngx_event_quic_protection.h
+>>> /usr/include/nginx/event/quic/ngx_event_quic_output.h
+>>> /usr/include/nginx/event/quic/ngx_event_quic_openssl_compat.h
+>>> /usr/include/nginx/event/quic/ngx_event_quic_migration.h
+>>> /usr/include/nginx/event/quic/ngx_event_quic_frames.h
+>>> /usr/include/nginx/event/quic/ngx_event_quic_connid.h
+>>> /usr/include/nginx/event/quic/ngx_event_quic_connection.h
+>>> /usr/include/nginx/event/quic/ngx_event_quic_ack.h
+>>> /usr/include/nginx/event/quic/ngx_event_quic.h
+>>> /usr/include/nginx/event/ngx_event_udp.h
+>>> /usr/include/nginx/event/ngx_event_timer.h
+>>> /usr/include/nginx/event/ngx_event_posted.h
+>>> /usr/include/nginx/event/ngx_event_pipe.h
+>>> /usr/include/nginx/event/ngx_event_openssl.h
+>>> /usr/include/nginx/event/ngx_event_connect.h
+>>> /usr/include/nginx/event/ngx_event.h
+>>> /usr/include/nginx/event/modules/
+>>> /usr/include/nginx/event/modules/ngx_iocp_module.h
+>>> /usr/include/nginx/core/
+>>> /usr/include/nginx/core/ngx_times.h
+>>> /usr/include/nginx/core/ngx_thread_pool.h
+>>> /usr/include/nginx/core/ngx_syslog.h
+>>> /usr/include/nginx/core/ngx_string.h
+>>> /usr/include/nginx/core/ngx_slab.h
+>>> /usr/include/nginx/core/ngx_shmtx.h
+>>> /usr/include/nginx/core/ngx_sha1.h
+>>> /usr/include/nginx/core/ngx_rwlock.h
+>>> /usr/include/nginx/core/ngx_resolver.h
+>>> /usr/include/nginx/core/ngx_regex.h
+>>> /usr/include/nginx/core/ngx_rbtree.h
+>>> /usr/include/nginx/core/ngx_radix_tree.h
+>>> /usr/include/nginx/core/ngx_queue.h
+>>> /usr/include/nginx/core/ngx_proxy_protocol.h
+>>> /usr/include/nginx/core/ngx_parse_time.h
+>>> /usr/include/nginx/core/ngx_parse.h
+>>> /usr/include/nginx/core/ngx_palloc.h
+>>> /usr/include/nginx/core/ngx_open_file_cache.h
+>>> /usr/include/nginx/core/ngx_murmurhash.h
+>>> /usr/include/nginx/core/ngx_module.h
+>>> /usr/include/nginx/core/ngx_md5.h
+>>> /usr/include/nginx/core/ngx_log.h
+>>> /usr/include/nginx/core/ngx_list.h
+>>> /usr/include/nginx/core/ngx_inet.h
+>>> /usr/include/nginx/core/ngx_hash.h
+>>> /usr/include/nginx/core/ngx_file.h
+>>> /usr/include/nginx/core/ngx_cycle.h
+>>> /usr/include/nginx/core/ngx_crypt.h
+>>> /usr/include/nginx/core/ngx_crc32.h
+>>> /usr/include/nginx/core/ngx_crc.h
+>>> /usr/include/nginx/core/ngx_core.h
+>>> /usr/include/nginx/core/ngx_connection.h
+>>> /usr/include/nginx/core/ngx_config.h
+>>> /usr/include/nginx/core/ngx_conf_file.h
+>>> /usr/include/nginx/core/ngx_buf.h
+>>> /usr/include/nginx/core/ngx_bpf.h
+>>> /usr/include/nginx/core/ngx_array.h
+>>> /usr/include/nginx/core/nginx.h
+--- /etc/
+--- /etc/nginx/
+>>> /etc/nginx/uwsgi_params
+>>> /etc/nginx/scgi_params
+>>> /etc/nginx/nginx.conf
+>>> /etc/nginx/fastcgi_params
+--- /etc/logrotate.d/
+>>> /etc/logrotate.d/nginx
+--- /etc/init.d/
+>>> /etc/init.d/nginx
+--- /etc/conf.d/
+>>> /etc/conf.d/nginx
+>>> www-servers/nginx-1.29.3-r3 merged.
+>>> Regenerating /etc/ld.so.cache...
+
+>>> Recording www-servers/nginx in "world" favorites file...
+
+>>> Completed (4 of 4) www-servers/nginx-1.29.3-r3::gentoo
+
+ * Messages for package acct-group/nginx-0-r2:
+
+ * Adding group nginx
+
+ * Messages for package acct-user/nginx-0-r2:
+
+ * Adding user nginx
+
+ * Messages for package www-servers/nginx-1.29.3-r3:
+
+ * http_grpc is enabled when http_v2 is disabled.
+ * The http_grpc module will not be built if http_v2 is not enabled.
+ * Please enable the nginx_modules_http_v2 USE flag on www-servers/nginx
+ * to use the http_grpc NGINX module. Refer to the Gentoo Handbook for
+ * instructions on how to change USE flags.
+
+ * GNU info directory index is up-to-date.
+
+!!! existing preserved libs:
+>>> package: dev-libs/expat-2.7.3
+ *  - /usr/lib64/libexpat.so.1
+ *  - /usr/lib64/libexpat.so.1.11.1
+ *      used by /opt/zoom/cef/libcef.so (net-im/zoom-6.7.2.6498)
+ *      used by /usr/bin/cpack (dev-build/cmake-4.1.2-r1)
+ *      used by /usr/bin/ctest (dev-build/cmake-4.1.2-r1)
+ *      used by /usr/bin/dbus-daemon (sys-apps/dbus-1.16.2)
+ *      used by /usr/bin/wayland-scanner (dev-util/wayland-scanner-1.24.0)
+ *      used by /usr/lib/polkit-1/polkitd (sys-auth/polkit-126-r2)
+ *      used by /usr/lib/python3.12/lib-dynload/pyexpat.cpython-312-x86_64-linux-gnu.so (dev-lang/python-3.12.12)
+ *      used by /usr/lib/python3.13/lib-dynload/pyexpat.cpython-313-x86_64-linux-gnu.so (dev-lang/python-3.13.9)
+ *      used by /usr/lib/python3.14/lib-dynload/pyexpat.cpython-314-x86_64-linux-gnu.so (dev-lang/python-3.14.0_p1)
+ *      used by /usr/lib64/gbm/dri_gbm.so (media-libs/mesa-25.2.7)
+ *      used by /usr/lib64/libEGL_mesa.so.0.0.0 (media-libs/mesa-25.2.7)
+ *      used by /usr/lib64/libGLX_mesa.so.0.0.0 (media-libs/mesa-25.2.7)
+ *      used by /usr/lib64/libexiv2.so.0.28.7 (media-gfx/exiv2-0.28.7)
+ *      used by /usr/lib64/libfontconfig.so.1.16.0 (media-libs/fontconfig-2.17.1)
+ *      used by /usr/lib64/libgallium-25.2.7.so (media-libs/mesa-25.2.7)
+ *      used by /usr/lib64/libgbm.so.1.0.0 (media-libs/mesa-25.2.7)
+ *      used by /usr/lib64/libvulkan_intel.so (media-libs/mesa-25.2.7)
+ *      used by /usr/lib64/libvulkan_intel_hasvk.so (media-libs/mesa-25.2.7)
+ *      used by /usr/lib64/libvulkan_radeon.so (media-libs/mesa-25.2.7)
+ *      used by /usr/lib64/perl5/vendor_perl/5.42/x86_64-linux/auto/XML/Parser/Expat/Expat.so (dev-perl/XML-Parser-2.470.0-r1)
+ *      used by /usr/libexec/dbus-daemon-launch-helper (sys-apps/dbus-1.16.2)
+ *      used by /usr/libexec/git-core/git-http-push (dev-vcs/git-2.52.0)
+ *      used by /usr/sbin/avahi-daemon (net-dns/avahi-0.9_rc2-r3)
+Use emerge @preserved-rebuild to rebuild packages using these libraries
+
+ * IMPORTANT: config file '/etc/sudoers' needs updating.
+ * See the CONFIGURATION FILES and CONFIGURATION FILES UPDATE TOOLS
+ * sections of the emerge man page to learn how to update config files.
+
+ * IMPORTANT: 30 news items need reading for repository 'gentoo'.
+ * Use eselect news read to view new items.
+
+((pip-venv) ) ➜  lab9 git:(main) ✗ eix nginx
+[I] acct-group/nginx
+     Available versions:  0-r2{gpkg}
+     Installed versions:  0-r2{gpkg}(12:41:55 AM 01/11/2025)
+     Description:         A group for www-servers/nginx
+
+* acct-group/nginx-unit
+     Available versions:  0-r1
+     Description:         A group for www-servers/nginx-unit
+
+* acct-group/nginx-vts-exporter
+     Available versions:  0-r3
+     Description:         System group: nginx-vts-exporter
+
+[I] acct-user/nginx
+     Available versions:  0-r2{gpkg} {icingaweb2 mgraph}
+     Installed versions:  0-r2{gpkg}(12:42:22 AM 01/11/2025)(-icingaweb2 -mgraph)
+     Description:         System user: nginx
+
+* acct-user/nginx-unit
+     Available versions:  0-r1
+     Description:         System user: nginx-unit
+
+* acct-user/nginx-vts-exporter
+     Available versions:  0-r3
+     Description:         user for nginx-vts-exporter
+
+* app-crypt/certbot-nginx
+     Available versions:  3.2.0-r100
+     Homepage:            https://github.com/certbot/certbot https://pypi.org/project/certbot-nginx/ https://letsencrypt.org/
+     Description:         Nginx plugin for Certbot (Let's Encrypt client)
+
+* app-emacs/nginx-mode
+     Available versions:  1.1.10
+     Homepage:            http://github.com/ajc/nginx-mode/
+     Description:         Emacs editing mode for Nginx config files
+
+* app-metrics/nginx-lua-prometheus
+     Available versions:  ~0.1_pre20170610-r101 {LUA_SINGLE_TARGET="+luajit"}
+     Homepage:            https://github.com/knyar/nginx-lua-prometheus
+     Description:         Library that exports Nginx metrics to Prometheus
+
+* app-metrics/nginx-vts-exporter
+     Available versions:  ~0.10.8
+     Homepage:            https://github.com/hnlq715/nginx-vts-exporter
+     Description:         Nginx virtual host traffic stats exporter for Prometheus
+
+* app-vim/nginx-syntax
+     Available versions:  0.3.3
+     Homepage:            https://www.vim.org/scripts/script.php?script_id=1886
+     Description:         vim plugin: Nginx configuration files syntax
+
+* dev-perl/Test-Nginx
+     Available versions:  0.31^t {test PERL_FEATURES="debug ithreads quadmath"}
+     Homepage:            https://metacpan.org/release/Test-Nginx https://github.com/openresty/test-nginx
+     Description:         Data-driven test scaffold for NGINX and OpenResty
+
+* sec-policy/selinux-nginx
+     Available versions:  2.20250213-r1 2.20250618-r1 **9999*l
+     Homepage:            https://wiki.gentoo.org/wiki/Project:SELinux
+     Description:         SELinux policy for nginx
+
+[I] www-servers/nginx
+     Available versions:  
+     (0)    1.26.3-r2^t
+     (mainline) ~1.27.5-r1^t 1.29.3-r3(mainline/1.29.3)^t{gpkg} ~1.29.4(mainline/1.29.4)^t
+     (stable) 1.28.0-r5(stable/1.28.0)^t ~1.28.1(stable/1.28.1)^t
+     (live) **9999(live/9999)*l^t
+       {aio debug +http +http-cache +http2 http3 ktls libatomic mail +modules pcre pcre-jit +pcre2 rtmp selinux ssl stream test threads vim-syntax LUA_SINGLE_TARGET="+luajit" NGINX_MODULES_HTTP="+access addition +auth_basic auth_ldap auth_pam auth_request +autoindex brotli +browser cache_purge +charset dav dav_ext degradation echo +empty_gif fancyindex +fastcgi flv +geo geoip geoip2 +grpc gunzip +gzip gzip_static headers_more image_filter javascript +limit_conn +limit_req lua +map memc +memcached metrics +mirror mogilefs mp4 naxsi perl +proxy push_stream random_index realip +referer +rewrite +scgi secure_link security slice slowfs_cache spdy +split_clients +ssi +ssl sticky stub_status sub upload_progress upstream_check +upstream_hash +upstream_ip_hash +upstream_keepalive +upstream_least_conn +upstream_random +upstream_zone +userid +uwsgi v2 v3 vhost_traffic_status vod xslt" NGINX_MODULES_MAIL="(+)imap (+)pop3 (+)smtp +ssl" NGINX_MODULES_STREAM="(+)access (+)geo geoip geoip2 javascript (+)limit_conn (+)map +pass realip (+)return +set (+)split_clients +ssl ssl_preread (+)upstream_hash (+)upstream_least_conn +upstream_random (+)upstream_zone"}
+     Installed versions:  1.29.3-r3(mainline/1.29.3)^t{gpkg}(05:50:35 PM 12/02/2025)(http modules -aio -debug -libatomic -mail -selinux -stream -test NGINX_MODULES_HTTP="access auth_basic autoindex browser charset empty_gif fastcgi geo grpc gzip limit_conn limit_req map memcached mirror proxy referer rewrite scgi split_clients ssi ssl upstream_hash upstream_ip_hash upstream_keepalive upstream_least_conn upstream_random upstream_zone userid uwsgi -addition -auth_request -dav -degradation -flv -geoip -gunzip -gzip_static -image_filter -mp4 -perl -random_index -realip -secure_link -slice -stub_status -sub -v2 -v3 -xslt" NGINX_MODULES_MAIL="imap pop3 smtp ssl" NGINX_MODULES_STREAM="access geo limit_conn map pass return set split_clients ssl upstream_hash upstream_least_conn upstream_random upstream_zone -geoip -realip -ssl_preread")
+     Homepage:            https://nginx.org https://github.com/nginx/nginx
+     Description:         Robust, small and high performance HTTP and reverse proxy server
+
+* www-servers/nginx-unit
+     Available versions:  1.34.2 ~1.34.2-r1 ~1.35.0 ~1.35.0-r1 {perl php8-3 php8-4 python ruby ssl PYTHON_SINGLE_TARGET="python3_12 python3_13 python3_14"}
+     Homepage:            https://unit.nginx.org
+     Description:         Dynamic web and application server
+
+Found 15 matches
+((pip-venv) ) ➜  lab9 git:(ma

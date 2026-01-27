@@ -1,0 +1,5 @@
+((pip-venv) ) ➜  lab8 git:(main) ls
+((pip-venv) ) ➜  lab8 git:(main) touch file.txt
+((pip-venv) ) ➜  lab8 git:(main) ✗ vim file.txt 
+((pip-venv) ) ➜  lab8 git:(main) ✗ vim file.txt
+((pip-venv) ) ➜  lab8 git:(main) ✗ nano lab8.txt
