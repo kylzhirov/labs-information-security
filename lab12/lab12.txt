@@ -1,0 +1,28 @@
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 990.4 kB/s  0:00:02
+Downloading annotated_types-0.7.0-py3-none-any.whl (13 kB)
+Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+Downloading typing_inspection-0.4.2-py3-none-any.whl (14 kB)
+Installing collected packages: typing-extensions, idna, annotated-types, annotated-doc, typing-inspection, pydantic-core, anyio, starlette, pydantic, fastapi
+Successfully installed annotated-doc-0.0.4 annotated-types-0.7.0 anyio-4.12.1 fastapi-0.128.0 idna-3.11 pydantic-2.12.5 pydantic-core-2.41.5 starlette-0.50.0 typing-extensions-4.15.0 typing-inspection-0.4.2
+((pip-venv) ) ➜  brute-force-server git:(main) nano main.py
+((pip-venv) ) ➜  brute-force-server git:(main) ✗ fastapi dev main.py  
+To use the fastapi command, please install "fastapi[standard]":
+
+	pip install "fastapi[standard]"
+
+Traceback (most recent call last):
+  File "/home/xexertye/geass/virtual-venvs/pip-venv/bin/fastapi", line 7, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/xexertye/geass/virtual-venvs/pip-venv/lib/python3.12/site-packages/fastapi/cli.py", line 12, in main
+    raise RuntimeError(message)  # noqa: B904
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: To use the fastapi command, please install "fastapi[standard]":
+
+	pip install "fastapi[standard]"
+
+((pip-venv) ) ➜  brute-force-server git:(main) ✗ pip install fastapi[standard]
+zsh: no matches found: fastapi[standard]
+((pip-venv) ) ➜  brute-force-server git:(main) ✗ pip install "fastapi[standard]"
+Requirement already satisfied: fastapi[standard] in /home/xexertye/geass/virtual-venvs/pip-venv/lib/python3.12/site-packages (0.128.0)
+Requirement already satisfied: starlette<0.51.0,>=0.40.0 in /home/xexertye/geass/virtual-venvs/pip-venv/lib/python3.12/site-packages (from fastapi[standar
