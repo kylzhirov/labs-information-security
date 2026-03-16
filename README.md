@@ -8,6 +8,10 @@ full responsibility for the deadlines set.
 1. Automated News Aggregator
 2. CI/CD with Gitlab
 
+## Project Link
+https://github.com/kylzhirov/final-project-infosec
+
+## Diagram
 Automated News Aggregator Container Diagram
 
 ```mermaid
