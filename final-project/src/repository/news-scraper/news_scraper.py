@@ -8,7 +8,7 @@ api_key = config['newsapi']['api_key']
 
 url = ('https://newsapi.org/v2/everything?'
        'q=Apple&'
-       'from=2026-01-23&'
+       'from=2026-01-25&'
        'sortBy=popularity&'
        f'apiKey={api_key}')
 
